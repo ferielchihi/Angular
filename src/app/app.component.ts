@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { rejects } from 'assert';
+import { ExpectedConditions, promise } from 'protractor';
+import { AppareilService } from './service/appareil.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'first-projet-angular';
+ constructor(){}
+
 }

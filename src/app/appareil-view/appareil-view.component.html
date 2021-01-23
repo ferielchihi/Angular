@@ -1,0 +1,9 @@
+<div class="col-xs-12">
+    <p >{{currentDate | date:'yyyy-MM-dd'}}</p>
+    <ul class="list-group">
+      <app-appareil *ngFor = 'let appareil of Appareils; let i= index ' [AppareilIndex]='i' [AppareilName]='appareil.Nom' [AppareilStatus]='appareil.Status'></app-appareil>
+    </ul>
+    <button class="btn btn-success" (click)= 'OnAllume()'>On</button>
+    <button class="btn btn-danger" (click)= 'OffAllume()'>Off</button>
+
+  </div>
